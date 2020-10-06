@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pi.Core\Pi.Core.csproj" />
+    <ProjectReference Include="..\Pi.Data\Pi.Data.csproj" />
+    <ProjectReference Include="..\Pi.Utility\Pi.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
