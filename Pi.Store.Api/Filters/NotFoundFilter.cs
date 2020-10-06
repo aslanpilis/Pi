@@ -34,7 +34,7 @@ namespace Pi.Store.Api.Filters
 
                 errorDto.Status = 404;
 
-                errorDto.Errors.Add($"id'si {id} olan ürün veritabanında bulunamadı");
+                errorDto.Errors.Add($"The product whose id is {id} could not be found in the database");
 
                 context.Result = new NotFoundObjectResult(errorDto);
             }

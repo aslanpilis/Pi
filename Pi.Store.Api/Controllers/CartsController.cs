@@ -8,11 +8,15 @@ using Microsoft.AspNetCore.Mvc;
 using Pi.Core.Entity;
 using Pi.Core.Services;
 using Pi.Store.Api.DTOs;
+using Pi.Store.Api.Filters;
 
 
 
 namespace Pi.Store.Api.Controllers
 {
+
+
+    //[BasicAuthFilter("Cart")]
     [Route("api/[controller]")]
     [ApiController]
     public class CartsController : ControllerBase
@@ -27,7 +31,7 @@ namespace Pi.Store.Api.Controllers
         }
 
 
-
+       
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByappuserId(int id)
         {
