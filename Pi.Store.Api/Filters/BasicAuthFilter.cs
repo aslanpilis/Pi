@@ -56,7 +56,7 @@ namespace Pi.Store.Api.Filters
 
     public bool IsAuthorized(AuthorizationFilterContext context, string username, string password)
     {
-            // redis implementation for api caching key
+            // redis implementation for apikey
             return true;
     }
 
