@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Pi.Data.Seeds
 {
-    internal class ProductSeed : IEntityTypeConfiguration<Product>
+    public class ProductSeed : IEntityTypeConfiguration<Product>
     {
         private readonly int[] _ids;
 
