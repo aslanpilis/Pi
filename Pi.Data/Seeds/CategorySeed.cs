@@ -23,4 +23,6 @@ namespace Pi.Data.Seeds
                 new Category { Id = _ids[1], Name = "Defterler" });
         }
     }
+
+
 }
