@@ -96,10 +96,11 @@ namespace Pi.Store.Api.Controllers
         [HttpDelete("{id}")]
         public IActionResult Remove(int id)
         {
-            var cart = _shoppingCartService.GetByIdAsync(id).Result;
-            _shoppingCartService.Remove(cart);
+            var carts = _shoppingCartService.GetByIdAsync(id).Result;
+            _shoppingCartService.Remove(carts);
 
             return NoContent();
+
         }
 
 
